@@ -18,4 +18,6 @@ to indicate which team stats we care about for this file, and which team's stats
 
 team_data/clean_data/<team_id>_avg_data.csv: Contains the rolling 16-game average stats for each team for associated game id. This will be the final form of our features.
 
-scores.csv
+scores.csv: Based on spreadspoke_scores.csv, but with extraneous columns removed and useful features like team_id's were added.
+
+scores_w_avgs.csv: This is the one we really care about. Contains >10000 NFL game results, along with the rolling 16-game average of each team's yards and turnovers (for the first model at least)
