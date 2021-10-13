@@ -5,10 +5,10 @@ There are several datasets involved with this project. Descriptions can be found
 
 **spreadspoke_scores.csv**: The original dataset from Kaggle. This contains a lot of details we don't care about like the spread, stadium, and weather. However, it also serves as the main dataset that we base our work off of. It contains the date of a game, season, home team, away team, score of each team, and the over/under of each game.
 
-**scores_w_avgs.csv**: This is the one we really care about. Contains >10000 NFL game results, along with the rolling 16-game average of each team's yards and turnovers (for the first model at least)
+**scores_w_avgs.csv**: This is the one we really care about. Contains >10000 NFL game results, along with the rolling 16-game average of each team's yards and turnovers coming into a particular game. This means that the feature values for each row are the average statistics of each team's last 16 games, rather than a previous season average. We figured this would give a better indication of that team's recent form than using previous yearly statistics, and thus give a better feature value for our model.
 
 ______________________________________________________
-Following datasets were included for clarity and an understanding of how we went from our original dataset (spreadspoke_scores.csv) to our clean and shiny dataset (scores_w_avgs.csv).
+**The following datasets were included for clarity and an understanding of how we went from our original dataset (spreadspoke_scores.csv) to our clean and shiny dataset (scores_w_avgs.csv). These are not used in the actual calculation of the model.**
 
 nfl_team.csv: Another dataset from Kaggle. We only really want this dataset for its mappings of team names to Pro Football Reference IDs (i.e. it maps 'Arizona Cardinals' to 'CRD'), which is very useful later in data cleaning and integration.
 
