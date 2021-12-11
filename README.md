@@ -18,4 +18,4 @@ These datasets are shared among all models. Both (1) and (2) were downloaded fro
 These datasets were built with specific models in mind. For example, in the PCA folder, the datasets contain the principal components, while in the non-PCA folder it contains the original statistics (yards, turnovers, etc.). 
 1. unclean_scores and clean_scores.csv - Almost the same as spreadspoke_scores.csv just with columns renamed, removed, and moved around
 2. scores_w_avgs.csv - A combination of spreadspoke_scores.csv and the avg_data datasets.
-3. {pca/non_pca}_weather_scores_with_avgs.csv
+3. {pca/non_pca}_weather_scores_with_avgs.csv - THe final dataset used for model generation. Contains the relevant statistics for that particular model type (i.e. PCA or non-PCA).
